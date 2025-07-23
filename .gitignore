@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# next.js build output
+.next/
+out/
+
+# production
+dist/
+
+# environment variables
+.env*
+!.env.example
+
+# logs
+logs
+*.log
+
+# system
+.DS_Store
+
+# editor
+.vscode/
+.idea/
+
+# others
+npm-debug.log*
+node_modules
