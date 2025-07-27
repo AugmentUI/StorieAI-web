@@ -21,7 +21,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/ui": ["./src/components/ui"],
-      "@/customer-components": ["./src/components/custom"]
+      "@/customer-components": ["./src/components/custom"],
+      "@/assets": ["./assets"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

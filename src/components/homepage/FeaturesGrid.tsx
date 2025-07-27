@@ -80,14 +80,14 @@ const FeaturesGrid = () => {
   return (
     <section className="relative px-6 py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="flex items-center gap-3 mb-4">
+        {/* <div className="flex items-center gap-3 mb-4">
           <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-          <p className="text-xs font-medium tracking-widest text-gray-500 uppercase">
+          <p className="text-xs font-medium tracking-widest text-muted-foreground uppercase">
             Features
           </p>
-        </div>
+        </div> */}
 
-        <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-14">
+        <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-14 text-center">
           Not just the best AI documentation tool,
           <br />
           but the best documentation tool — period
@@ -97,7 +97,7 @@ const FeaturesGrid = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="relative p-6 overflow-hidden border shadow-xl isolate rounded-2xl border-white/10 backdrop-blur-xl bg-white/5"
+              className="relative p-6 overflow-hidden border shadow-primary isolate rounded-2xl border-white/10 backdrop-blur-xl bg-white/5"
             >
               {/* Per-tile animated blob */}
               <div
@@ -107,11 +107,11 @@ const FeaturesGrid = () => {
 
               {/* Tile content */}
               <div className="relative z-10">
-                <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-lg bg-gradient-to-tr from-purple-500 to-blue-500">
+                <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-lg bg-gradient-to-tr from-[hsl(var(--primary))] to-[hsl(var(--secondary))]">
                   {feature.icon}
                 </div>
                 <h3 className="mb-3 text-xl font-bold">{feature.title}</h3>
-                <p className="leading-relaxed text-gray-600">
+                <p className="leading-relaxed text-muted-foreground">
                   {feature.description}
                 </p>
               </div>

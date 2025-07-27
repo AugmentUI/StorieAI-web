@@ -32,7 +32,7 @@ const Testimonials = () => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
     }, 4000);
     return () => clearInterval(interval);
-  }, []);
+  }, [testimonials.length]);
 
   return (
     <section className="py-16 px-6">
@@ -41,7 +41,9 @@ const Testimonials = () => {
           <h2 className="text-4xl font-bold mb-6">
             The best AI documentation assistant
           </h2>
-          <p className="text-xl text-gray-600 mb-8">and we can prove it.</p>
+          <p className="text-xl text-muted-foreground mb-8">
+            and we can prove it.
+          </p>
           <div className="flex justify-center space-x-1 mb-8">
             {[...Array(5)].map((_, i) => (
               <Star
@@ -52,20 +54,20 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 min-h-[200px]">
+        <div className="bg-background rounded-2xl p-8 shadow-lg border border-border min-h-[200px]">
           <div className="text-center">
             <p className="text-lg text-gray-700 mb-6 italic leading-relaxed">
               &quot;{testimonials[currentTestimonial].text}&quot;
             </p>
             <div className="flex items-center justify-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
                 <Users className="w-5 h-5 text-white" />
               </div>
               <div>
                 <div className="font-semibold">
                   {testimonials[currentTestimonial].name}
                 </div>
-                <div className="text-gray-500 text-sm">
+                <div className="text-muted-foreground text-sm">
                   {testimonials[currentTestimonial].handle}
                 </div>
               </div>

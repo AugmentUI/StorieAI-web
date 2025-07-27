@@ -57,7 +57,7 @@ export function Button({
 
       <div
         className={cn(
-          'relative flex h-full w-full items-center justify-center border border-slate-200 bg-gray-50 text-sm text-gray-700 antialiased',
+          'relative flex h-full w-full items-center justify-center border border-slate-200 bg-card text-sm text-gray-700 antialiased',
           className
         )}
         style={{
