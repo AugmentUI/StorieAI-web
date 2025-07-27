@@ -8,6 +8,16 @@
       {
         "button-name": "off"
       }
+    ],
+    "apple-touch-icons": "off",
+    "typescript-config/consistent-casing": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
     ]
   }
 }

@@ -1,16 +1,14 @@
 import { Download } from 'lucide-react';
-import Image from 'next/image';
+
 import React from 'react';
+import { ThemeToggle } from '../shared/ThemeToggle';
+import StorieAILogo from '../shared/StorieAILogo';
 
 const NavBar = () => {
   return (
-    <nav className="flex items-center justify-between p-6 border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+    <nav className="flex items-center justify-between p-6 border-b sticky top-0 z-50 backdrop-blur-sm bg-background/80 border-border supports-[backdrop-filter]:bg-background/60 transition-colors sticky top-0 z-50 backdrop-blur-lg shadow-sm dark:shadow-md">
       <div className="flex items-center space-x-3">
-        {/* <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
-          <FileText className="w-5 h-5 text-white" />
-        </div>
-        <span className="text-xl font-bold">StorieAI</span> */}
-        <Image src="/storieAI.png" alt="storieAI" width={120} height={45} />
+        <StorieAILogo />
       </div>
       {/* <div className="hidden md:flex items-center space-x-8">
         <a
@@ -43,16 +41,21 @@ const NavBar = () => {
     <span>Install Extension</span>
   </button> */}
 
-      <button className="relative bg-primary hover:brightness-110 text-primary-foreground px-6 py-2 rounded-full overflow-hidden isolate transition-colors flex items-center space-x-2">
-        {/* Glowing animated border sweep */}
-        <div className="absolute inset-0 rounded-full pointer-events-none border-spin-mask">
-          <div className="absolute left-1/2 top-1/2 w-full animate-spin-sweep rounded-full border-conic"></div>
-        </div>
+      <div className="flex justify-between gap-4">
+        <button className="relative bg-primary hover:brightness-110 text-primary-foreground px-6 py-2 rounded-full overflow-hidden isolate transition-colors flex items-center space-x-2">
+          {/* Glowing animated border sweep */}
+          <div className="absolute inset-0 rounded-full pointer-events-none border-spin-mask">
+            <div className="absolute left-1/2 top-1/2 w-full animate-spin-sweep rounded-full border-conic"></div>
+          </div>
 
-        {/* Button content */}
-        <Download className="w-4 h-4 relative z-10" />
-        <span className="relative z-10">Install Extension</span>
-      </button>
+          {/* Button content */}
+          <Download className="w-4 h-4 relative z-10" />
+          <span className="relative z-10">Install Extension</span>
+        </button>
+        <div className="flex items-center space-x-4">
+          <ThemeToggle />
+        </div>
+      </div>
     </nav>
   );
 };

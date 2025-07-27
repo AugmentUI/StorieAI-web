@@ -20,8 +20,8 @@ export default function Hero() {
           duration={4000}
           className="relative inline-flex items-center space-x-2 bg-card rounded-full px-4 py-2 mb-8 overflow-hidden isolate"
         >
-          <Bot className="w-4 h-4 text-purple-600 relative z-10" />
-          <span className="text-sm text-gray-700 relative z-10">
+          <Bot className="w-4 h-4 text-primary relative z-10" />
+          <span className="text-sm text-muted-foreground relative z-10">
             The first AI-native documentation generator for VS Code
           </span>
         </Button>
@@ -46,7 +46,7 @@ export default function Hero() {
             <span>Install from VS Code for MacOS</span>
           </button>
         </div>
-        <div className="mt-24">
+        <div>
           <ParallaxImages />
         </div>
       </div>

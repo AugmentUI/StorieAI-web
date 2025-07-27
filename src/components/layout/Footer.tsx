@@ -1,5 +1,5 @@
-import { FileText } from 'lucide-react';
 import React from 'react';
+import StorieAILogo from '../shared/StorieAILogo';
 
 const Footer = () => {
   return (
@@ -7,10 +7,7 @@ const Footer = () => {
       <div className="max-w-6xl px-6 mx-auto">
         <div className="flex flex-col items-center justify-between md:flex-row">
           <div className="flex items-center mb-4 space-x-3 md:mb-0">
-            <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-r from-primary to-secondary">
-              <FileText className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-xl font-bold">StorieAI</span>
+            <StorieAILogo />
           </div>
           <div className="flex mb-4 space-x-8 text-muted-foreground md:mb-0">
             <a href="#" className="transition-colors hover:text-black">

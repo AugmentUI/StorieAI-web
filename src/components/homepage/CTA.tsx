@@ -10,12 +10,12 @@ const CTA = () => {
           <br />
           documentation workflow?
         </h2>
-        <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+        <p className="text-xl text-primary-foreground mb-12 max-w-3xl mx-auto">
           Join thousands of developers who&apos;ve already discovered the power
           of AI-assisted documentation. Install StorieAI and experience the
           future of code documentation.
         </p>
-        <button className="bg-background hover:bg-gray-100 text-foreground px-12 py-4 rounded-xl text-xl font-semibold transition-all flex items-center space-x-2 mx-auto">
+        <button className="bg-background text-foreground px-12 py-4 rounded-xl text-xl font-semibold transition-all flex items-center space-x-2 mx-auto">
           <Download className="w-6 h-6" />
           <span>Install StorieAI Extension</span>
         </button>

@@ -46,17 +46,14 @@ const Testimonials = () => {
           </p>
           <div className="flex justify-center space-x-1 mb-8">
             {[...Array(5)].map((_, i) => (
-              <Star
-                key={i}
-                className="w-6 h-6 fill-yellow-400 text-yellow-400"
-              />
+              <Star key={i} className="w-6 h-6 fill-primary text-primary" />
             ))}
           </div>
         </div>
 
-        <div className="bg-background rounded-2xl p-8 shadow-lg border border-border min-h-[200px]">
+        <div className="p-8 min-h-[200px] rounded-xl border bg-card text-card-foreground shadow">
           <div className="text-center">
-            <p className="text-lg text-gray-700 mb-6 italic leading-relaxed">
+            <p className="text-lg text-card-foreground mb-6 italic leading-relaxed">
               &quot;{testimonials[currentTestimonial].text}&quot;
             </p>
             <div className="flex items-center justify-center space-x-3">
@@ -80,8 +77,8 @@ const Testimonials = () => {
                 key={index}
                 className={`w-2 h-2 rounded-full transition-all ${
                   index === currentTestimonial
-                    ? 'bg-purple-600 w-8'
-                    : 'bg-gray-300'
+                    ? 'bg-primary w-8'
+                    : 'bg-secondary'
                 }`}
                 onClick={() => setCurrentTestimonial(index)}
               />

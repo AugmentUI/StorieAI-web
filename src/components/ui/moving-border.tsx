@@ -48,7 +48,7 @@ export function Button({
         <MovingBorder duration={duration} rx="30%" ry="30%">
           <div
             className={cn(
-              'h-20 w-20 bg-[radial-gradient(theme(colors.purple.500)_40%,transparent_60%)] opacity-80',
+              'h-20 w-20 bg-[radial-gradient(#ec4899_40%,transparent_60%)] opacity-80 blur-lg',
               borderClassName
             )}
           />
