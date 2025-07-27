@@ -1,11 +1,13 @@
 'use client';
 import Image from 'next/image';
+import StorieAILight from '@/assets/logo/StorieAI_light.png';
+import StorieAIDark from '@/assets/logo/StorieAI_dark.png';
 
 const StorieAILogo = () => {
   return (
     <div className="relative w-[120px] h-[45px]">
       <Image
-        src="/logo/storieAI_light.png"
+        src={StorieAILight}
         alt="StorieAI Logo Light"
         fill
         className="block dark:hidden object-contain"
@@ -13,7 +15,7 @@ const StorieAILogo = () => {
       />
 
       <Image
-        src="/logo/storieAI_dark.png"
+        src={StorieAIDark}
         alt="StorieAI Logo Dark"
         fill
         className="hidden dark:block object-contain"
