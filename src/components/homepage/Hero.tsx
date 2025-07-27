@@ -1,8 +1,8 @@
-'use client';
-import { Bot, Download } from 'lucide-react';
-import { Button } from '../ui/moving-border';
-import { useRef } from 'react';
-import ParallaxImages from './ParallaxImages';
+"use client";
+import { Bot, Download } from "lucide-react";
+import { Button } from "../ui/moving-border";
+import { useRef } from "react";
+import ParallaxImages from "./ParallaxImages";
 
 export default function Hero() {
   const ref = useRef(null);
@@ -43,7 +43,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button className="bg-primary hover:brightness-110 text-primary-foreground px-8 py-4 rounded-xl text-lg font-semibold transition-all flex items-center space-x-2">
             <Download className="w-5 h-5" />
-            <span>Install from VS Code for MacOS</span>
+            <a
+              href="https://marketplace.visualstudio.com/items?itemName=StorieAI.storieai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Install from VS Code for MacOS</span>
+            </a>
           </button>
         </div>
         <div>

@@ -1,8 +1,8 @@
-import { Download } from 'lucide-react';
+import { Download } from "lucide-react";
 
-import React from 'react';
-import { ThemeToggle } from '../shared/ThemeToggle';
-import StorieAILogo from '../shared/StorieAILogo';
+import React from "react";
+import { ThemeToggle } from "../shared/ThemeToggle";
+import StorieAILogo from "../shared/StorieAILogo";
 
 const NavBar = () => {
   return (
@@ -50,7 +50,13 @@ const NavBar = () => {
 
           {/* Button content */}
           <Download className="w-4 h-4 relative z-10" />
-          <span className="relative z-10">Install Extension</span>
+          <a
+            href="https://marketplace.visualstudio.com/items?itemName=StorieAI.storieai"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="relative z-10">Install Extension</span>
+          </a>
         </button>
         <div className="flex items-center space-x-4">
           <ThemeToggle />
