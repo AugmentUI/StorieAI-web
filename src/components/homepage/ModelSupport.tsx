@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { Bedrock, OpenAI, Anthropic } from '@lobehub/icons';
-import React from 'react';
+import { Bedrock, OpenAI, Anthropic } from "@lobehub/icons";
+import React from "react";
 
 export const ModelSupport = () => {
   return (
-    <section className="relative px-6 pt-2 pb-16">
+    <section className="py-16 px-6 bg-card">
       <div className="mx-auto max-w-7xl">
         {/* Animated blobs */}
         {/* <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-[hsl(var(--primary)/0.3)] opacity-30 rounded-full filter blur-3xl mix-blend-multiply animate-blob z-0" />

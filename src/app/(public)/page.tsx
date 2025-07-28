@@ -1,15 +1,15 @@
-'use client';
-import React from 'react';
-import Hero from '@/components/homepage/Hero';
+"use client";
+import React from "react";
+import Hero from "@/components/homepage/Hero";
 // import Introduction from '@/components/homepage/Introduction';
-import Preview from '@/components/homepage/Preview';
-import FeaturesGrid from '@/components/homepage/FeaturesGrid';
-import Testimonials from '@/components/homepage/Testimonials';
-import NavBar from '@/components/layout/NavBar';
-import CTA from '@/components/homepage/CTA';
-import Footer from '@/components/layout/Footer';
-import Stats from '@/components/homepage/Stats';
-import { ModelSupport } from '@/components/homepage/ModelSupport';
+import Preview from "@/components/homepage/Preview";
+import FeaturesGrid from "@/components/homepage/FeaturesGrid";
+import Testimonials from "@/components/homepage/Testimonials";
+import NavBar from "@/components/layout/NavBar";
+import CTA from "@/components/homepage/CTA";
+import Footer from "@/components/layout/Footer";
+import Stats from "@/components/homepage/Stats";
+import { ModelSupport } from "@/components/homepage/ModelSupport";
 
 export default function StorieAiHomepage() {
   return (
@@ -61,16 +61,16 @@ export default function StorieAiHomepage() {
       </section> */}
 
       {/* Preview Section */}
-      <Preview />
-
-      {/* Features Grid */}
-      <FeaturesGrid />
+      {/* <Preview /> */}
 
       {/* LLM models support*/}
       <ModelSupport />
 
+      {/* Features Grid */}
+      {/* <FeaturesGrid /> */}
+
       {/* Stats Section */}
-      <Stats />
+      {/* <Stats /> */}
 
       {/* Testimonials Section */}
       <Testimonials />

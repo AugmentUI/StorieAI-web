@@ -8,12 +8,12 @@ const CTA = () => {
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           Ready to transform your
           <br />
-          documentation workflow?
+          storybook workflow?
         </h2>
         <p className="text-xl text-primary-foreground mb-12 max-w-3xl mx-auto">
-          Join thousands of developers who&apos;ve already discovered the power
-          of AI-assisted documentation. Install StorieAI and experience the
-          future of code documentation.
+          Generate clean stories from your components, track coverage, and run
+          Storybook—AI-powered, right inside VS Code. Install StorieAI and keep
+          your team in flow.
         </p>
         <button className="bg-background text-foreground px-12 py-4 rounded-xl text-xl font-semibold transition-all flex items-center space-x-2 mx-auto">
           <Download className="w-6 h-6" />
@@ -26,7 +26,7 @@ const CTA = () => {
           </a>
         </button>
         <p className="mt-4 text-accent">
-          Free for individual developers • Pro plans for teams
+          Free for individual developers, team and enterprise.
         </p>
       </div>
     </section>
