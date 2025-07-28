@@ -22,22 +22,21 @@ export default function Hero() {
         >
           <Bot className="w-4 h-4 text-primary relative z-10" />
           <span className="text-sm text-muted-foreground relative z-10">
-            The first AI-native documentation generator for VS Code
+            The first AI-Powered STORYBOOK generator for VS Code
           </span>
         </Button>
 
         <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
-          Built to Keep You
+          Built to Keep Your
           <br />
           <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            in Flow State
+            UI moving
           </span>
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-          The first AI documentation assistant, and then some. StorieAI is where
-          the work of developers and AI truly flow together, creating
-          documentation that feels like literal magic.
+          An AI co‑pilot that understands your code, crafts stories, highlights
+          gaps and keeps storybook ready. Less wiring, more building.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

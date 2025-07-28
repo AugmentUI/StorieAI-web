@@ -1,5 +1,5 @@
-import React from 'react';
-import StorieAILogo from '../shared/StorieAILogo';
+import React from "react";
+import StorieAILogo from "../shared/StorieAILogo";
 
 const Footer = () => {
   return (
@@ -16,15 +16,25 @@ const Footer = () => {
             <a href="#" className="transition-colors hover:text-black">
               Terms
             </a>
-            <a href="#" className="transition-colors hover:text-black">
+            <a
+              href="https://github.com/AugmentUI/StorieAI/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-black"
+            >
               Support
             </a>
-            <a href="#" className="transition-colors hover:text-black">
+            <a
+              href="https://marketplace.visualstudio.com/items?itemName=StorieAI.storieai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-black"
+            >
               Docs
             </a>
           </div>
           <div className="text-muted-foreground">
-            © 2025 StorieAI. All rights reserved.
+            © 2025 AugmentUI. All rights reserved.
           </div>
         </div>
       </div>
