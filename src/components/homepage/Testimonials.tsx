@@ -8,22 +8,27 @@ const Testimonials = () => {
     {
       name: "Sarah Chen",
       handle: "@sarahcodes",
-      text: "StorieAI completely transformed how I document my code. Instead of spending hours writing docs, I just let it analyze my project and generate beautiful stories automatically.",
-    },
-    {
-      name: "Marcus Rodriguez",
-      handle: "@marcusdev",
-      text: "The AI understands context like no other tool. It creates documentation that actually makes sense and helps onboard new team members instantly.",
-    },
-    {
-      name: "Jessica Kim",
-      handle: "@jessicabuilds",
-      text: "I've tried every documentation tool out there. StorieAI is in a league of its own. It's like having a technical writer built into VS Code.",
+      text: "StorieAI transformed how I document UI. It analyzed my Next.js repo and generated clean stories in minutes.",
     },
     {
       name: "David Thompson",
       handle: "@davethompson",
-      text: "Our team's productivity skyrocketed after installing StorieAI. Documentation is no longer a chore - it's automated and actually enjoyable.",
+      text: "Our component testing loop is dramatically faster. Stories are ready when code is, not weeks later.",
+    },
+    {
+      name: "Priya Nair",
+      handle: "@priyanair",
+      text: "The coverage dashboard surfaced gaps we’d missed. We prioritized quickly and shipped stories with confidence.",
+    },
+    {
+      name: "Miguel Santos",
+      handle: "@miguels",
+      text: "As a design systems lead, I finally get consistent, stories across packages. StorieAI keeps us aligned.",
+    },
+    {
+      name: "Kenji Watanabe",
+      handle: "@kenji_codes",
+      text: "Zero context switching: generate stories, check coverage, and run the server without leaving VS Code.",
     },
   ];
 
