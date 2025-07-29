@@ -1,28 +1,28 @@
-import { Star, Users } from 'lucide-react';
-import React, { useState, useEffect } from 'react';
+import { Star, Users } from "lucide-react";
+import React, { useState, useEffect } from "react";
 
 const Testimonials = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const testimonials = [
     {
-      name: 'Sarah Chen',
-      handle: '@sarahcodes',
-      text: 'StorieAI completely transformed how I document my code. Instead of spending hours writing docs, I just let it analyze my project and generate beautiful stories automatically.',
+      name: "Sarah Chen",
+      handle: "@sarahcodes",
+      text: "StorieAI completely transformed how I document my code. Instead of spending hours writing docs, I just let it analyze my project and generate beautiful stories automatically.",
     },
     {
-      name: 'Marcus Rodriguez',
-      handle: '@marcusdev',
-      text: 'The AI understands context like no other tool. It creates documentation that actually makes sense and helps onboard new team members instantly.',
+      name: "Marcus Rodriguez",
+      handle: "@marcusdev",
+      text: "The AI understands context like no other tool. It creates documentation that actually makes sense and helps onboard new team members instantly.",
     },
     {
-      name: 'Jessica Kim',
-      handle: '@jessicabuilds',
+      name: "Jessica Kim",
+      handle: "@jessicabuilds",
       text: "I've tried every documentation tool out there. StorieAI is in a league of its own. It's like having a technical writer built into VS Code.",
     },
     {
-      name: 'David Thompson',
-      handle: '@davethompson',
+      name: "David Thompson",
+      handle: "@davethompson",
       text: "Our team's productivity skyrocketed after installing StorieAI. Documentation is no longer a chore - it's automated and actually enjoyable.",
     },
   ];
@@ -39,7 +39,7 @@ const Testimonials = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6">
-            The best AI documentation assistant
+            The best AI assistant for storybook
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
             and we can prove it.
@@ -77,8 +77,8 @@ const Testimonials = () => {
                 key={index}
                 className={`w-2 h-2 rounded-full transition-all ${
                   index === currentTestimonial
-                    ? 'bg-primary w-8'
-                    : 'bg-secondary'
+                    ? "bg-primary w-8"
+                    : "bg-secondary"
                 }`}
                 onClick={() => setCurrentTestimonial(index)}
               />
