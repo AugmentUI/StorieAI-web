@@ -1,23 +1,23 @@
-import { notFound } from 'next/navigation';
-import { buildMetadata } from '@/lib/seo';
-import { marked } from 'marked';
-import DOMPurify from 'dompurify';
-import { JSDOM } from 'jsdom';
+import { notFound } from "next/navigation";
+import { buildMetadata } from "@/lib/seo";
+import { marked } from "marked";
+import DOMPurify from "dompurify";
+import { JSDOM } from "jsdom";
 
 // BlogPost type and sample blog data
-export type BlogPost = {
+type BlogPost = {
   title: string;
   slug: string;
   content: string;
   description: string;
 };
 
-export const posts: BlogPost[] = [
+const posts: BlogPost[] = [
   {
-    title: 'AI-generated Docs for React Components',
-    slug: 'ai-docs-react',
+    title: "AI-generated Docs for React Components",
+    slug: "ai-docs-react",
     description:
-      'Learn how StorieAI automates Storybook docs using AI for your React code.',
+      "Learn how StorieAI automates Storybook docs using AI for your React code.",
     content: `## Automate Documentation with AI
 
 StorieAI deeply understands your React component tree and generates Storybook stories from it.
@@ -32,10 +32,10 @@ No manual stories. Just smart defaults and intuitive controls.
 - Integrates with Figma annotations`,
   },
   {
-    title: 'Storybook vs MDX vs StorieAI',
-    slug: 'storybook-vs-mdx',
+    title: "Storybook vs MDX vs StorieAI",
+    slug: "storybook-vs-mdx",
     description:
-      'Compare traditional MDX authoring in Storybook with AI-powered alternatives.',
+      "Compare traditional MDX authoring in Storybook with AI-powered alternatives.",
     content: `## Authoring Experience
 
 Writing MDX is powerful but tedious.
@@ -50,10 +50,10 @@ With StorieAI, you focus on writing components. Stories are derived intelligentl
 - Hybrid? Also supported.`,
   },
   {
-    title: 'The Future of Design Systems',
-    slug: 'design-systems-future',
+    title: "The Future of Design Systems",
+    slug: "design-systems-future",
     description:
-      'Explore the role of AI in testing, documenting, and evolving modern design systems.',
+      "Explore the role of AI in testing, documenting, and evolving modern design systems.",
     content: `## Design Systems at Scale
 
 StorieAI helps you:
@@ -69,15 +69,11 @@ StorieAI helps you:
   },
 ];
 
-export async function generateStaticParams() {
+async function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
+async function generateMetadata({ params }: { params: { slug: string } }) {
   const post = posts.find((p) => p.slug === params.slug);
   if (!post) return {};
   return buildMetadata({
@@ -87,18 +83,21 @@ export async function generateMetadata({
   });
 }
 
-const window = new JSDOM('').window;
+const window = new JSDOM("").window;
 const purify = DOMPurify(window);
 
 export default async function BlogPostPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const post = posts.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+
+  const post = posts.find((p) => p.slug === slug);
   if (!post) return notFound();
 
-  const rawHtml = await marked(post.content);
+  // If your `marked` returns a Promise, keep await; if it's sync, use marked.parse(...)
+  const rawHtml = await marked(post.content); // or: marked.parse(post.content)
   const html = purify.sanitize(rawHtml);
 
   return (
