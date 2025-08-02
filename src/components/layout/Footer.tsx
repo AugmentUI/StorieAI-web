@@ -1,5 +1,5 @@
-import React from "react";
-import StorieAILogo from "../shared/StorieAILogo";
+import React from 'react';
+import StorieAILogo from '../shared/StorieAILogo';
 
 const Footer = () => {
   return (
