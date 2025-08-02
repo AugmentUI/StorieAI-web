@@ -11,7 +11,7 @@ import { useTheme } from '@/lib/use-theme';
 import { Moon, Sun, Laptop2 } from 'lucide-react';
 
 export function ThemeToggle() {
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   const currentIcon = {
     light: <Sun className="h-4 w-4" />,
