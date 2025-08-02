@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.augmentui.ai
+
+# Sitemaps
+Sitemap: https://www.augmentui.ai/sitemap.xml
