@@ -1,65 +1,65 @@
-import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import './globals.css';
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import "./globals.css";
 
 const geistSans = Geist({
-  subsets: ['latin'],
-  variable: '--font-geist-sans',
-  display: 'swap',
+  subsets: ["latin"],
+  variable: "--font-geist-sans",
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
-  subsets: ['latin'],
-  variable: '--font-geist-mono',
-  display: 'swap',
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: 'StorieAI – AI-powered Storybook Docs for React & Figma',
-    template: '%s | StorieAI',
+    default: "StorieAI – AI-powered Storybook generator for React",
+    template: "%s | StorieAI",
   },
   description:
-    'Generate comprehensive Storybook stories directly from your component code with AI. Built for React, Figma, and developer-first design systems.',
-  metadataBase: new URL('https://www.augmentui.ai'),
+    "Generate comprehensive Storybook stories directly from your component code instantly.",
+  metadataBase: new URL("https://www.augmentui.ai"),
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   openGraph: {
-    title: 'StorieAI – AI-powered Storybook Docs for React & Figma',
+    title: "StorieAI – AI-powered Storybook generator for React",
     description:
-      'Generate Storybook stories directly from your component code using AI. StorieAI helps developers visualize, document, and track UI coverage effortlessly.',
-    url: 'https://www.augmentui.ai',
-    siteName: 'StorieAI',
+      "Generate Storybook stories directly from your component code using AI. StorieAI helps developers visualize, document, and track UI coverage effortlessly.",
+    url: "https://www.augmentui.ai",
+    siteName: "StorieAI",
     images: [
       {
-        url: '/og-preview.png',
+        url: "/og-preview.png",
         width: 1200,
         height: 630,
-        alt: 'StorieAI – Storybook UI coverage demo',
+        alt: "StorieAI – Storybook UI coverage demo",
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'StorieAI – AI Storybook for React & Figma',
+    card: "summary_large_image",
+    title: "StorieAI – AI Powered Storybook for React",
     description:
-      'AI-native docs and coverage for your component libraries. Say goodbye to boilerplate.',
-    images: ['/og-preview.png'],
-    creator: '@your_twitter_handle', // optional
+      "AI-native docs and coverage for your component libraries. Say goodbye to boilerplate.",
+    images: ["/og-preview.png"],
+    creator: "@your_twitter_handle", // optional
   },
   icons: {
-    icon: '/favicon-32x32.png',
-    shortcut: '/favicon.ico',
-    apple: '/apple-icon-180x180.png',
+    icon: "/favicon-32x32.png",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon-180x180.png",
   },
   other: {
-    'vs-marketplace':
-      'https://marketplace.visualstudio.com/items?itemName=StorieAI.storieai',
+    "vs-marketplace":
+      "https://marketplace.visualstudio.com/items?itemName=StorieAI.storieai",
   },
 };
 
@@ -88,16 +88,14 @@ export default function RootLayout({
         />
 
         {/* Primary Meta Tags */}
-        <title>
-          StorieAI – AI-powered Storybook Generator for React & Figma
-        </title>
+        <title>StorieAI – AI-powered Storybook Generator for React</title>
         <meta
           name="title"
-          content="StorieAI – AI-powered Storybook Generator for React & Figma"
+          content="StorieAI – AI-powered Storybook Generator for React"
         />
         <meta
           name="description"
-          content="Generate comprehensive Storybook stories directly from your React component code with AI. StorieAI helps you build, test, and document UI faster, with seamless Figma and Storybook integration."
+          content="Generate comprehensive Storybook stories directly from your React component code with AI. StorieAI helps you build, test, and document UI faster, with seamless Storybook integration."
         />
 
         {/* OpenGraph / Facebook */}
@@ -105,7 +103,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://augmentui.ai/" />
         <meta
           property="og:title"
-          content="StorieAI – AI-powered Storybook Generator for React & Figma"
+          content="StorieAI – AI-powered Storybook Generator for React"
         />
         <meta
           property="og:description"
@@ -121,11 +119,11 @@ export default function RootLayout({
         <meta property="twitter:url" content="https://augmentui.ai/" />
         <meta
           property="twitter:title"
-          content="StorieAI – AI-powered Storybook Generator for React & Figma"
+          content="StorieAI – AI-powered Storybook Generator for React"
         />
         <meta
           property="twitter:description"
-          content="Generate comprehensive Storybook stories from your React components using AI. Built for developer-first design systems with Figma support."
+          content="Generate comprehensive Storybook stories for your React components instantly."
         />
         <meta
           property="twitter:image"
@@ -216,34 +214,34 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'SoftwareApplication',
-              name: 'StorieAI',
-              url: 'https://www.augmentui.ai',
-              image: 'https://www.augmentui.ai/og-preview.png',
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "StorieAI",
+              url: "https://www.augmentui.ai",
+              image: "https://www.augmentui.ai/og-preview.png",
               description:
-                'StorieAI is an AI-native Storybook and component documentation toolkit built for teams using React, Figma, and ShadCN. Zero boilerplate, all magic.',
-              applicationCategory: 'DeveloperApplication',
-              operatingSystem: 'Web',
+                "Generate comprehensive Storybook stories directly from your React component code with AI. StorieAI helps you build, test, and document UI faster, with seamless Storybook integration.",
+              applicationCategory: "DeveloperApplication",
+              operatingSystem: "Web",
               offers: {
-                '@type': 'Offer',
-                price: '0',
-                priceCurrency: 'USD',
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
               },
               creator: {
-                '@type': 'Person',
-                name: 'Sajal Jain',
+                "@type": "Person",
+                name: "Sajal Jain",
               },
-              softwareVersion: '1.0.0',
+              softwareVersion: "1.0.0",
               keywords: [
-                'storybook',
-                'react',
-                'ai',
-                'documentation',
-                'component testing',
-                'design systems',
+                "storybook",
+                "react",
+                "ai",
+                "documentation",
+                "component testing",
+                "design systems",
               ],
-              datePublished: '2025-08-01',
+              datePublished: "2025-08-01",
             }),
           }}
         />
