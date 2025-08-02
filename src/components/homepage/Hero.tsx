@@ -1,8 +1,8 @@
-"use client";
-import { Bot, Download } from "lucide-react";
-import { Button } from "../ui/moving-border";
-import { useRef } from "react";
-import ParallaxImages from "./ParallaxImages";
+'use client';
+import { Bot, Download } from 'lucide-react';
+import { Button } from '../ui/moving-border';
+import { useRef } from 'react';
+import ParallaxImages from './ParallaxImages';
 
 export default function Hero() {
   const ref = useRef(null);
@@ -46,6 +46,7 @@ export default function Hero() {
               href="https://marketplace.visualstudio.com/items?itemName=StorieAI.storieai"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Install StorieAI VS Code Extension"
             >
               <span>Install from VS Code for MacOS</span>
             </a>
