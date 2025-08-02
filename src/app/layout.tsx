@@ -244,8 +244,6 @@ export default function RootLayout({
                 'design systems',
               ],
               datePublished: '2025-08-01',
-              browserRequirements:
-                'Requires modern browser with JavaScript enabled',
             }),
           }}
         />
