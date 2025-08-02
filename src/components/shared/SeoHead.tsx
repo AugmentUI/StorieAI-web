@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from "next/head";
 
 type SeoProps = {
   title?: string;
@@ -9,12 +9,12 @@ type SeoProps = {
 };
 
 const defaultMeta = {
-  title: 'StorieAI – AI-powered Storybook Generator for React & Figma',
+  title: "StorieAI – AI-powered Storybook Generator for React",
   description:
-    'Generate comprehensive Storybook stories directly from your React component code with AI. StorieAI helps you build, test, and document UI faster, with seamless Figma and Storybook integration.',
-  image: 'https://augmentui.ai/og-preview.png',
-  url: 'https://augmentui.ai',
-  canonical: 'https://augmentui.ai',
+    "Generate comprehensive Storybook stories directly from your React component code with AI. StorieAI helps you build, test, and document UI faster, with seamless Storybook integration.",
+  image: "https://augmentui.ai/og-preview.png",
+  url: "https://augmentui.ai",
+  canonical: "https://augmentui.ai",
 };
 
 export default function SeoHead({
